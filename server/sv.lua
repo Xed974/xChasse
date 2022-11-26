@@ -23,7 +23,7 @@ ESX.RegisterServerCallback("xChasse:depecer", function(source, cb)
         TriggerClientEvent('esx:showNotification', source, ('(~g~Succès~s~)\nAnimal dépecer, vous avez reçu ~r~x%s~s~ morceau de viande.'):format(random))
         cb(true)
     else
-        TriggerClientEvent('esx:showNotification', source, '(~r~Erreur~s~)\nVous n\'avez pas de couteau sur vous.')
+        TriggerClientEvent('esx:showNotification', source, '(~r~Erreur~s~)\nVous n\'avez pas de couteau sur vous, la viande est devenue avariée.')
         cb(false)
     end
 end)
