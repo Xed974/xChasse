@@ -39,6 +39,7 @@ xChasse = {
     ItemForDepecer = "knife", -- Item couteau utilisé pour dépecer les animaux mort
     ItemViande = "viande_cru", -- Item reçu après avoir dépecer un animal mort
     PriceViande = 9, -- Prix de la viande à la revente (prix unitaire)
+    ItemAmmoChasse = "ammo_rifle",
     Animal = {
         [1] = "a_c_boar",
         [2] = "a_c_deer",
