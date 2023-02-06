@@ -36,10 +36,10 @@ xChasse = {
         Vente = {vector3(961.57, -2111.53, 31.94)}
     },
     ItemChasse = "musket", -- Item utilisé pour tué les animaux
+    ItemAmmoChasse = "ammo_rifle", -- Item utilisé pour recharger l'arme
     ItemForDepecer = "knife", -- Item couteau utilisé pour dépecer les animaux mort
     ItemViande = "viande_cru", -- Item reçu après avoir dépecer un animal mort
     PriceViande = 9, -- Prix de la viande à la revente (prix unitaire)
-    ItemAmmoChasse = "ammo_rifle",
     Animal = {
         [1] = "a_c_boar",
         [2] = "a_c_deer",
