@@ -4,10 +4,12 @@ ESX.RegisterServerCallback("xChasse:start/stop", function(source, cb)
     if (not xPlayer) then return end
     if xPlayer.getInventoryItem(xChasse.ItemChasse).count > 0 then
         xPlayer.removeInventoryItem(xChasse.ItemChasse, xPlayer.getInventoryItem(xChasse.ItemChasse).count)
+        xPlayer.removeInventoryItem(xChasse.ItemAmmoChasse, xPlayer.getInventoryItem(xChasse.ItemAmmoChasse).count)
         TriggerClientEvent('esx:showNotification', source, '(~g~Succès~s~)\nVous avez arrêté(e) votre session de chasse.')
         cb(false)
     else
         xPlayer.addInventoryItem(xChasse.ItemChasse, 1)
+        xPlayer.addInventoryItem(xChasse.ItemAmmoChasse, 250)
         TriggerClientEvent('esx:showNotification', source, '(~g~Succès~s~)\nVous avez commencé(e) votre session de chasse.')
         cb(true)
     end
